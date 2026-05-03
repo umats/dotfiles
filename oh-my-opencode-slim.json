@@ -20,13 +20,13 @@
         "variant": "high"
       },
       "librarian": {
-        "model": "opencode/gpt-5-nano",
+        "model": "opencode-go/deepseek-v4-flash",
         "variant": "low",
         "skills": [],
         "mcps": ["websearch", "context7", "grep_app"]
       },
       "explorer": {
-        "model": "opencode/gpt-5-nano",
+        "model": "opencode-go/deepseek-v4-flash",
         "variant": "low",
         "skills": [],
         "mcps": []
@@ -39,12 +39,12 @@
       },
       "fixer": {
         "model": "opencode-go/deepseek-v4-flash",
-        "variant": "high",
+        "variant": "low",
         "skills": [],
         "mcps": []
       },
       "observer": {
-        "model": "kimi-for-coding/k2p5",
+        "model": "opencode-go/glm-5.1",
         "skills": [],
         "mcps": []
       }
@@ -62,7 +62,7 @@
           "variant": "max"
         },
         "gamma": {
-          "model": "opencode-go/glm-5.1",
+          "model": "opencode-go/qwen3.6-plus",
           "variant": "high"
         }
       }
