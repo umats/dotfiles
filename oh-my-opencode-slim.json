@@ -16,7 +16,7 @@
         "mcps": []
       },
       "council": {
-        "model": "kimi-for-coding/k2p5",
+        "model": "opencode-go/glm-5.1",
         "variant": "high"
       },
       "librarian": {
@@ -32,7 +32,7 @@
         "mcps": []
       },
       "designer": {
-        "model": "kimi-for-coding/k2p5",
+        "model": "opencode-go/kimi-k2.5",
         "variant": "medium",
         "skills": ["agent-browser"],
         "mcps": []
@@ -45,7 +45,7 @@
       },
       "observer": {
         "model": "opencode-go/glm-5.1",
-	"variant": "medium",
+        "variant": "medium",
         "skills": [],
         "mcps": []
       }
