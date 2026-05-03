@@ -45,6 +45,7 @@
       },
       "observer": {
         "model": "opencode-go/glm-5.1",
+	"variant": "medium",
         "skills": [],
         "mcps": []
       }
