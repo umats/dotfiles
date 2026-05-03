@@ -62,7 +62,7 @@
           "variant": "max"
         },
         "gamma": {
-          "model": "opencode-go/qwen3.6-plus",
+          "model": "opencode-go/minimax-m2.7",
           "variant": "high"
         }
       }
