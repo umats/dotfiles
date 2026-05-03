@@ -1,47 +1,50 @@
 {
   "$schema": "https://unpkg.com/oh-my-opencode-slim@latest/oh-my-opencode-slim.schema.json",
-  "preset": "kimi",
+  "preset": "default",
+  "disabled_agents": [],
   "presets": {
-    "kimi": {
+    "default": {
       "orchestrator": {
         "model": "kimi-for-coding/k2p6",
-        "variant": "high",
         "skills": ["*"],
         "mcps": ["*", "!context7"]
       },
       "oracle": {
-        "model": "kimi-for-coding/kimi-k2-thinking",
-        "variant": "high",
-        "skills": ["simplify", "codemap"],
-        "mcps": []
-      },
-      "explorer": {
-        "model": "opencode/gpt-5-nano",
-        "variant": "low",
-        "skills": ["codemap"],
-        "mcps": []
-      },
-      "librarian": {
-        "model": "opencode/minimax-m2.5-free",
-        "variant": "low",
+        "model": "opencode-go/deepseek-v4-pro",
+        "variant": "max",
         "skills": [],
-        "mcps": ["websearch", "context7", "grep_app"]
-      },
-      "designer": {
-        "model": "kimi-for-coding/k2p5",
-        "variant": "medium",
-        "skills": ["agent-browser", "simplify"],
-        "mcps": []
-      },
-      "fixer": {
-        "model": "opencode/big-pickle",
-        "variant": "low",
-        "skills": ["simplify"],
         "mcps": []
       },
       "council": {
         "model": "kimi-for-coding/k2p5",
+        "variant": "high"
+      },
+      "librarian": {
+        "model": "opencode/gpt-5-nano",
         "variant": "low",
+        "skills": [],
+        "mcps": ["websearch", "context7", "grep_app"]
+      },
+      "explorer": {
+        "model": "opencode/gpt-5-nano",
+        "variant": "low",
+        "skills": [],
+        "mcps": []
+      },
+      "designer": {
+        "model": "kimi-for-coding/k2p5",
+        "variant": "medium",
+        "skills": ["agent-browser"],
+        "mcps": []
+      },
+      "fixer": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "variant": "high",
+        "skills": [],
+        "mcps": []
+      },
+      "observer": {
+        "model": "kimi-for-coding/k2p5",
         "skills": [],
         "mcps": []
       }
@@ -50,9 +53,18 @@
   "council": {
     "presets": {
       "default": {
-        "alpha":  { "model": "kimi-for-coding/k2p5", "variant": "high" },
-        "beta": { "model": "opencode/big-pickle", "variant": "medium" },
-        "gamma": { "model": "opencode/nemotron-3-super-free", "variant": "medium" }
+        "alpha": {
+          "model": "kimi-for-coding/k2p6",
+          "variant": "high"
+        },
+        "beta": {
+          "model": "opencode-go/deepseek-v4-pro",
+          "variant": "max"
+        },
+        "gamma": {
+          "model": "opencode-go/glm-5.1",
+          "variant": "high"
+        }
       }
     }
   },
@@ -63,8 +75,8 @@
   },
   "todoContinuation": {
     "maxContinuations": 50,
-    "cooldownMs": 5000,
+    "cooldownMs": 3000,
     "autoEnable": false,
-    "autoEnableThreshold": 3
+    "autoEnableThreshold": 4
   }
 }
