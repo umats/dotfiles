@@ -1,0 +1,70 @@
+{
+  "$schema": "https://unpkg.com/oh-my-opencode-slim@latest/oh-my-opencode-slim.schema.json",
+  "preset": "kimi",
+  "presets": {
+    "kimi": {
+      "orchestrator": {
+        "model": "kimi-for-coding/k2p6",
+        "variant": "high",
+        "skills": ["*"],
+        "mcps": ["*", "!context7"]
+      },
+      "oracle": {
+        "model": "kimi-for-coding/kimi-k2-thinking",
+        "variant": "high",
+        "skills": ["simplify", "codemap"],
+        "mcps": []
+      },
+      "explorer": {
+        "model": "opencode/gpt-5-nano",
+        "variant": "low",
+        "skills": ["codemap"],
+        "mcps": []
+      },
+      "librarian": {
+        "model": "opencode/minimax-m2.5-free",
+        "variant": "low",
+        "skills": [],
+        "mcps": ["websearch", "context7", "grep_app"]
+      },
+      "designer": {
+        "model": "kimi-for-coding/k2p5",
+        "variant": "medium",
+        "skills": ["agent-browser", "simplify"],
+        "mcps": []
+      },
+      "fixer": {
+        "model": "opencode/big-pickle",
+        "variant": "low",
+        "skills": ["simplify"],
+        "mcps": []
+      },
+      "council": {
+        "model": "kimi-for-coding/k2p5",
+        "variant": "low",
+        "skills": [],
+        "mcps": []
+      }
+    }
+  },
+  "council": {
+    "presets": {
+      "default": {
+        "alpha":  { "model": "kimi-for-coding/k2p5", "variant": "high" },
+        "beta": { "model": "opencode/big-pickle", "variant": "medium" },
+        "gamma": { "model": "opencode/nemotron-3-super-free", "variant": "medium" }
+      }
+    }
+  },
+  "multiplexer": {
+    "type": "auto",
+    "layout": "main-vertical",
+    "main_pane_size": 60
+  },
+  "todoContinuation": {
+    "maxContinuations": 50,
+    "cooldownMs": 5000,
+    "autoEnable": false,
+    "autoEnableThreshold": 3
+  }
+}
