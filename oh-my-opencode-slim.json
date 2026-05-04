@@ -114,6 +114,7 @@
     "chains": {
       "orchestrator": [
         "kimi-for-coding/k2p6",
+	"kimi-for-coding/k2p5",
         "opencode-go/kimi-k2.5",
         "opencode-go/glm-5.1"
       ]
