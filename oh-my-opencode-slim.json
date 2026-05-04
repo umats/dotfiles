@@ -16,7 +16,7 @@
         "mcps": ["code-review-graph"]
       },
       "council": {
-        "model": "opencode-go/glm-5.1",
+        "model": "opencode-go/deepseek-v4-pro",
         "variant": "high"
       },
       "librarian": {
@@ -39,12 +39,12 @@
       },
       "fixer": {
         "model": "opencode-go/deepseek-v4-flash",
-        "variant": "low",
+        "variant": "high",
         "skills": ["golang-pro", "flutter-expert", "python-pro"],
         "mcps": ["code-review-graph"]
       },
       "observer": {
-        "model": "opencode-go/glm-5.1",
+        "model": "opencode-go/kimi-k2.5",
         "variant": "medium",
         "skills": [],
         "mcps": []
@@ -54,18 +54,9 @@
   "council": {
     "presets": {
       "default": {
-        "alpha": {
-          "model": "kimi-for-coding/k2p6",
-          "variant": "high"
-        },
-        "beta": {
-          "model": "opencode-go/deepseek-v4-pro",
-          "variant": "max"
-        },
-        "gamma": {
-          "model": "opencode-go/minimax-m2.7",
-          "variant": "high"
-        }
+        "alpha": { "model": "kimi-for-coding/k2p6", "variant": "high" },
+        "beta": { "model": "opencode-go/deepseek-v4-pro", "variant": "max" },
+        "gamma": { "model": "opencode-go/minimax-m2.7", "variant": "high" }
       }
     }
   },
