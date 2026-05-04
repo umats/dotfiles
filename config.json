@@ -14,11 +14,6 @@
       "environment": {
         "DEFAULT_MINIMUM_TOKENS": ""
       }
-    },
-    "filesystem": {
-      "type": "local",
-      "command": ["npx", "-y", "@modelcontextprotocol/server-filesystem", "/home/tsubus/projects", "/home/tsubus/iac"],
-      "enabled": true
     }
   }
 }
