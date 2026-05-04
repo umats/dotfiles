@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/oh-my-opencode-slim@latest/oh-my-opencode-slim.schema.json",
-  "preset": "default",
+  "preset": "budget",
   "disabled_agents": [],
   "presets": {
     "default": {
@@ -30,14 +30,13 @@
         "mcps": ["code-review-graph"]
       },
       "designer": {
-        "model": "opencode-go/kimi-k2.5",
+        "model": "opencode-go/kimi-k2.6",
         "variant": "medium",
         "skills": ["agent-browser", "flutter-expert"],
         "mcps": []
       },
       "fixer": {
         "model": "opencode-go/deepseek-v4-flash",
-        "variant": "high",
         "skills": ["golang-pro", "flutter-expert", "python-pro"],
         "mcps": ["code-review-graph"]
       },
@@ -50,42 +49,39 @@
     },
     "budget": {
       "orchestrator": {
-        "model": "opencode-go/kimi-k2.5",
+        "model": "kimi-for-coding/k2p5",
         "variant": "medium",
         "skills": ["*"],
         "mcps": ["*", "!context7"]
       },
       "oracle": {
-        "model": "opencode-go/kimi-k2.5",
-        "variant": "medium",
+        "model": "opencode-go/deepseek-v4-pro",
+        "variant": "max",
         "skills": ["simplify"],
         "mcps": ["code-review-graph"]
       },
       "council": {
-        "model": "opencode-go/kimi-k2.5",
-        "variant": "medium"
+        "model": "opencode-go/deepseek-v4-pro",
+        "variant": "high"
       },
       "librarian": {
-        "model": "opencode-go/deepseek-v4-flash",
-        "variant": "low",
+        "model": "opencode-go/minimax-m2.7",
         "skills": [],
         "mcps": ["websearch", "context7", "grep_app"]
       },
       "explorer": {
-        "model": "opencode-go/deepseek-v4-flash",
-        "variant": "low",
+        "model": "opencode-go/minimax-m2.7",
         "skills": [],
         "mcps": ["code-review-graph"]
       },
       "designer": {
-        "model": "opencode-go/kimi-k2.5",
+        "model": "opencodego/kimi-k2.5",
         "variant": "medium",
         "skills": ["agent-browser", "flutter-expert"],
         "mcps": []
       },
       "fixer": {
         "model": "opencode-go/deepseek-v4-flash",
-        "variant": "low",
         "skills": ["golang-pro", "flutter-expert", "python-pro"],
         "mcps": ["code-review-graph"]
       },
