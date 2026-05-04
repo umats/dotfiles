@@ -12,8 +12,8 @@
       "oracle": {
         "model": "opencode-go/deepseek-v4-pro",
         "variant": "max",
-        "skills": [],
-        "mcps": []
+        "skills": ["simplify"],
+        "mcps": ["code-review-graph"]
       },
       "council": {
         "model": "opencode-go/glm-5.1",
@@ -29,19 +29,19 @@
         "model": "opencode-go/deepseek-v4-flash",
         "variant": "low",
         "skills": [],
-        "mcps": []
+        "mcps": ["code-review-graph"]
       },
       "designer": {
         "model": "opencode-go/kimi-k2.5",
         "variant": "medium",
-        "skills": ["agent-browser"],
+        "skills": ["agent-browser", "flutter-expert"],
         "mcps": []
       },
       "fixer": {
         "model": "opencode-go/deepseek-v4-flash",
         "variant": "low",
-        "skills": [],
-        "mcps": []
+        "skills": ["golang-pro", "flutter-expert", "python-pro"],
+        "mcps": ["code-review-graph"]
       },
       "observer": {
         "model": "opencode-go/glm-5.1",
