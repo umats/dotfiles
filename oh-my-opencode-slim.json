@@ -20,14 +20,12 @@
         "variant": "high"
       },
       "librarian": {
-        "model": "opencode-go/deepseek-v4-flash",
-        "variant": "low",
+        "model": "opencode-go/minimax-m2.7",
         "skills": [],
         "mcps": ["websearch", "context7", "grep_app"]
       },
       "explorer": {
-        "model": "opencode-go/deepseek-v4-flash",
-        "variant": "low",
+        "model": "opencode-go/minimax-m2.7",
         "skills": [],
         "mcps": ["code-review-graph"]
       },
