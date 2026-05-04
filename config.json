@@ -2,10 +2,13 @@
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
     "code-review-graph": {
-      "type": "local",
-      "command": ["uvx", "code-review-graph", "serve"],
-      "enabled": true,
-      "timeout": 600000
+      "command": "uvx",
+      "args": [
+        "code-review-graph",
+        "serve"
+      ],
+      "type": "stdio",
+      "env": []
     },
     "context7": {
       "type": "local",
