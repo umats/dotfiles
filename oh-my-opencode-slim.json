@@ -82,7 +82,7 @@
       },
       "fixer": {
         "model": "opencode-go/deepseek-v4-flash",
-        "skills": ["golang-pro", "flutter-expert", "python-pro"],
+        "skills": ["golang-pro", "flutter-expert", "python-pro", "debugging-wizard", "security-reviewer"],
         "mcps": ["code-review-graph"]
       },
       "observer": {
