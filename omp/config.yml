@@ -54,7 +54,7 @@ retry:
     - kimi-code/kimi-k2.5:low
 
   fallbackRevertPolicy: cooldown-expiry
-steeringMode: one-at-a-time
+steeringMode: all
 followUpMode: one-at-a-time
 interruptMode: immediate
 compaction:
@@ -72,5 +72,26 @@ async:
   maxJobs: 100
 memory:
   enabled: true
+  backend: local
 secrets:
   enabled: true
+renderMermaid:
+  enabled: true
+inspect_image:
+  enabled: true
+checkpoint:
+  enabled: true
+mcp:
+  discoveryMode: false
+task:
+  eager: true
+commands:
+  enableClaudeUser: false
+  enableClaudeProject: false
+providers:
+  webSearch: auto
+  kimiApiFormat: openai
+disabledProviders:
+- claude-plugins
+- claude
+- opencode
