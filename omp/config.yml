@@ -1,15 +1,15 @@
-lastChangelogVersion: 14.6.6
-theme:
+lastChangelogVersion: 14.7.0
+theme: 
   dark: titanium
   light: light
-display:
+display: 
   tabWidth: 2
   showTokenUsage: true
 hideThinkingBlock: false
 collapseChangelog: false
-browser:
+browser: 
   headless: true
-modelRoles:
+modelRoles: 
   default: kimi-code/kimi-k2.5:medium
   smol: opencode-go/deepseek-v4-flash:low
   slow: kimi-code/kimi-for-coding:medium
@@ -18,80 +18,79 @@ modelRoles:
   designer: kimi-code/kimi-for-coding:medium
   task: opencode-go/deepseek-v4-pro:medium
   commit: opencode-go/deepseek-v4-flash:low
-disabledExtensions:
-- rule:clinerules
-- skill:fitness-trainer
-- skill:openscad-expert
-- skill:kubernetes-specialist
-retry:
+disabledExtensions: 
+  - rule:clinerules
+  - skill:fitness-trainer
+  - skill:openscad-expert
+  - skill:kubernetes-specialist
+retry: 
   enabled: true
   maxRetries: 3
   baseDelayMs: 2000
-  fallbackChains:
-    default:
-    - kimi-code/kimi-k2.5:medium
-    - opencode-go/kimi-k2.5
-    smol:
-    - opencode-go/deepseek-v4-flash:low
-    - kimi-code/kimi-k2.5:low
-    slow:
-    - kimi-code/kimi-for-coding:medium
-    - opencode-go/kimi-k2.6
-    plan:
-    - kimi-code/kimi-for-coding:medium
-    - opencode-go/kimi-k2.6
-    vision:
-    - kimi-code/kimi-k2.5:medium
-    - opencode-go/kimi-k2.5
-    designer:
-    - kimi-code/kimi-for-coding:medium
-    - opencode-go/kimi-k2.6
-    task:
-    - opencode-go/deepseek-v4-pro:medium
-    - kimi-code/kimi-k2.5:medium
-    commit:
-    - opencode-go/deepseek-v4-flash:low
-    - kimi-code/kimi-k2.5:low
-
+  fallbackChains: 
+    default: 
+      - kimi-code/kimi-k2.5:medium
+      - opencode-go/kimi-k2.5
+    smol: 
+      - opencode-go/deepseek-v4-flash:low
+      - kimi-code/kimi-k2.5:low
+    slow: 
+      - kimi-code/kimi-for-coding:medium
+      - opencode-go/kimi-k2.6
+    plan: 
+      - kimi-code/kimi-for-coding:medium
+      - opencode-go/kimi-k2.6
+    vision: 
+      - kimi-code/kimi-k2.5:medium
+      - opencode-go/kimi-k2.5
+    designer: 
+      - kimi-code/kimi-for-coding:medium
+      - opencode-go/kimi-k2.6
+    task: 
+      - opencode-go/deepseek-v4-pro:medium
+      - kimi-code/kimi-k2.5:medium
+    commit: 
+      - opencode-go/deepseek-v4-flash:low
+      - kimi-code/kimi-k2.5:low
   fallbackRevertPolicy: cooldown-expiry
 steeringMode: all
 followUpMode: one-at-a-time
 interruptMode: immediate
-compaction:
+compaction: 
   enabled: true
   reserveTokens: 16384
   keepRecentTokens: 25000
-skills:
+skills: 
   enabled: true
-terminal:
+terminal: 
   showImages: true
-memories:
+memories: 
   enabled: true
-async:
+async: 
   enabled: true
   maxJobs: 100
-memory:
+memory: 
   enabled: true
   backend: local
-secrets:
+secrets: 
   enabled: true
-renderMermaid:
+renderMermaid: 
   enabled: true
-inspect_image:
+inspect_image: 
   enabled: true
-checkpoint:
+checkpoint: 
   enabled: true
-mcp:
+mcp: 
   discoveryMode: false
-task:
+task: 
   eager: true
-commands:
+commands: 
   enableClaudeUser: false
   enableClaudeProject: false
-providers:
+providers: 
   webSearch: auto
   kimiApiFormat: openai
-disabledProviders:
-- claude-plugins
-- claude
-- opencode
+disabledProviders: 
+  - claude-plugins
+  - claude
+  - opencode
