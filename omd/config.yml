@@ -1,0 +1,76 @@
+lastChangelogVersion: 14.6.6
+
+theme:
+  dark: titanium
+  light: light
+
+display:
+  showTokenUsage: true
+
+hideThinkingBlock: false
+
+browser:
+  headless: true
+
+modelRoles:
+  default: kimi-code/kimi-k2.5:medium
+  plan: kimi-code/kimi-for-coding:medium
+  vision: opencode-go/kimi-k2.5:medium
+  designer: opencode-go/kimi-k2.6:medium
+  task: opencode-go/deepseek-v4-pro:xhigh
+  commit: opencode-go/deepseek-v4-flash:low
+  smol: opencode-go/deepseek-v4-flash:low
+  slow: kimi-code/kimi-for-coding:medium
+
+disabledExtensions:
+  - rule:clinerules
+  - skill:fitness-trainer
+  - skill:openscad-expert
+  - skill:kubernetes-specialist
+
+retry:
+  enabled: true
+  # Number of retries before giving up on rate limits/server errors
+  maxRetries: 3
+  # Wait this long as a base (exponentially backed off) unless the API provides a retry-after-ms
+  baseDelayMs: 2000
+  # Configure role-specific model fallback chains
+  fallbackChains:
+    default:
+      - "kimi-code/kimi-k2.5:medium"
+      - "opencode-go/kimi-k2.5"
+    plan:
+      - "kimi-code/kimi-for-coding:medium"
+      - "opencode-go/kimi-k2.6"
+    slow:
+      - "kimi-code/kimi-for-coding:medium"
+      - "opencode-go/kimi-k2.6"
+  # Whether to revert to the primary model when a fallback's cooldown expires
+  fallbackRevertPolicy: cooldown-expiry
+steeringMode: one-at-a-time
+followUpMode: one-at-a-time
+interruptMode: immediate
+
+hideThinkingBlock: false
+collapseChangelog: false
+
+display:
+  tabWidth: 2 # Tab rendering width (.editorconfig integration)
+
+compaction:
+  enabled: true
+  reserveTokens: 16384
+  keepRecentTokens: 20000
+
+skills:
+  enabled: true
+
+terminal:
+  showImages: true
+
+memories:
+  enabled: true
+
+async:
+  enabled: true
+  maxJobs: 100
