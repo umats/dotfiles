@@ -1,4 +1,4 @@
-lastChangelogVersion: 14.7.2
+lastChangelogVersion: 14.9.3
 theme: 
   dark: titanium
   light: light
@@ -20,9 +20,12 @@ modelRoles:
   commit: opencode-go/deepseek-v4-flash:low
 disabledExtensions: 
   - rule:clinerules
-  - skill:fitness-trainer
   - skill:openscad-expert
-  - skill:kubernetes-specialist
+  - skill:plannotator-annotate
+  - skill:plannotator-compound
+  - skill:plannotator-last
+  - skill:plannotator-review
+  - skill:fitness-trainer
 retry: 
   enabled: true
   maxRetries: 3
@@ -93,4 +96,5 @@ providers:
 disabledProviders: 
   - claude-plugins
   - claude
-  - opencode
+  - cline
+  - codex
