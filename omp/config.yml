@@ -98,3 +98,4 @@ disabledProviders:
   - claude
   - cline
   - codex
+  - opencode
