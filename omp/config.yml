@@ -1,4 +1,4 @@
-lastChangelogVersion: 14.9.7
+lastChangelogVersion: 15.0.0
 theme: 
   dark: titanium
   light: light
@@ -87,6 +87,8 @@ mcp:
   discoveryMode: false
 task: 
   eager: true
+  agentModelOverrides:
+    reviewer: opencode-go/deepseek-v4-pro:medium
 commands: 
   enableClaudeUser: false
   enableClaudeProject: false
