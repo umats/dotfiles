@@ -1,4 +1,4 @@
-lastChangelogVersion: 15.0.2
+lastChangelogVersion: 15.8.0
 theme: 
   dark: titanium
   light: light
@@ -101,3 +101,5 @@ disabledProviders:
   - cline
   - codex
   - opencode
+symbolPreset: unicode
+setupVersion: 1
