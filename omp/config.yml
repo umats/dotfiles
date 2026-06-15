@@ -39,16 +39,16 @@ retry:
       - kimi-code/kimi-k2.5:low
     slow: 
       - kimi-code/kimi-for-coding:medium
-      - opencode-go/kimi-k2.6
+      - opencode-go/kimi-k2.7-code
     plan: 
       - kimi-code/kimi-for-coding:medium
-      - opencode-go/kimi-k2.6
+      - opencode-go/kimi-k2.7-code
     vision: 
       - kimi-code/kimi-k2.5:medium
       - opencode-go/kimi-k2.5
     designer: 
       - kimi-code/kimi-for-coding:medium
-      - opencode-go/kimi-k2.6
+      - opencode-go/kimi-k2.7-code
     task: 
       - opencode-go/deepseek-v4-pro:medium
       - kimi-code/kimi-k2.5:medium
