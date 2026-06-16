@@ -1,4 +1,3 @@
-lastChangelogVersion: 15.8.0
 theme: 
   dark: titanium
   light: light
@@ -12,8 +11,8 @@ browser:
 modelRoles: 
   default: kimi-code/kimi-k2.5:medium
   smol: opencode-go/deepseek-v4-flash:low
-  slow: kimi-code/kimi-for-coding:medium
-  plan: kimi-code/kimi-for-coding:medium
+  slow: kimi-code/kimi-for-coding:high
+  plan: kimi-code/kimi-for-coding:high
   vision: opencode-go/kimi-k2.5:medium
   designer: kimi-code/kimi-for-coding:medium
   task: opencode-go/deepseek-v4-pro:medium
@@ -38,10 +37,10 @@ retry:
       - opencode-go/deepseek-v4-flash:low
       - kimi-code/kimi-k2.5:low
     slow: 
-      - kimi-code/kimi-for-coding:medium
+      - kimi-code/kimi-for-coding:high
       - opencode-go/kimi-k2.7-code
     plan: 
-      - kimi-code/kimi-for-coding:medium
+      - kimi-code/kimi-for-coding:high
       - opencode-go/kimi-k2.7-code
     vision: 
       - kimi-code/kimi-k2.5:medium
@@ -55,6 +54,9 @@ retry:
     commit: 
       - opencode-go/deepseek-v4-flash:low
       - kimi-code/kimi-k2.5:low
+    reviewer:
+      - opencode-go/deepseek-v4-pro:medium
+      - kimi-code/kimi-for-coding:medium
   fallbackRevertPolicy: cooldown-expiry
 steeringMode: all
 followUpMode: one-at-a-time
@@ -86,7 +88,7 @@ checkpoint:
 mcp: 
   discoveryMode: false
 task: 
-  eager: true
+  eager: always
   agentModelOverrides: 
     reviewer: opencode-go/deepseek-v4-pro:medium
 commands: 
