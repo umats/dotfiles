@@ -1,0 +1,27 @@
+{
+  "lastChangelogVersion": "0.79.5",
+  "theme": "dark",
+  "defaultProvider": "kimi-coding",
+  "defaultModel": "kimi-for-coding",
+  "defaultThinkingLevel": "high",
+  "enabledModels": [
+    "opencode-go/deepseek-v4-flash",
+    "kimi-coding/kimi-for-coding",
+    "opencode-go/deepseek-v4-pro"
+  ],
+  "packages": [
+    "npm:context-mode",
+    "npm:pi-mcp-adapter",
+    "npm:pi-web-access",
+    "npm:pi-subagents",
+    "npm:@juicesharp/rpiv-ask-user-question",
+    "npm:@juicesharp/rpiv-todo",
+    "npm:@vigolium/piolium",
+    "npm:@ayulab/pi-rewind",
+    "npm:pi-lens",
+    "git:github.com/DietrichGebert/ponytail",
+    "npm:pi-intercom",
+    "npm:@ayulab/pi-checkpoint",
+    "npm:@earendil-works/pi-coding-agent"
+  ]
+}
