@@ -54,7 +54,7 @@ retry:
     commit: 
       - opencode-go/deepseek-v4-flash:low
       - kimi-code/kimi-k2.5:low
-    reviewer:
+    reviewer: 
       - opencode-go/deepseek-v4-pro:medium
       - kimi-code/kimi-for-coding:medium
   fallbackRevertPolicy: cooldown-expiry
@@ -100,7 +100,6 @@ providers:
 disabledProviders: 
   - claude-plugins
   - claude
-  - cline
   - codex
   - opencode
 symbolPreset: unicode
