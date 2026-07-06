@@ -9,7 +9,8 @@
     "git:github.com/DietrichGebert/ponytail",
     "npm:pi-provider-kimi-code",
     "npm:pi-intercom",
-    "npm:pi-prompt-template-model"
+    "npm:pi-prompt-template-model",
+    "npm:pi-hermes-memory"
   ],
   "lastChangelogVersion": "0.80.3",
   "theme": "dark",
