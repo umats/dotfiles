@@ -6,7 +6,6 @@
 #         without any warranty.
 #         Copyright 2012— Gregory Pakosz (@gpakosz).
 
-
 # -- bindings ------------------------------------------------------------------
 
 # preserve tmux stock bindings,
@@ -382,6 +381,9 @@ tmux_conf_urlscan_options="--compact --dedupe"
 # -- user customizations -------------------------------------------------------
 
 # this is the place to override or undo settings
+
+set -g extended-keys on
+set -g extended-keys-format csi-u
 
 # increase history size
 set -g history-limit 200000
