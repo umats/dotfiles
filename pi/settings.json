@@ -10,11 +10,12 @@
     "npm:pi-provider-kimi-code",
     "npm:pi-intercom",
     "npm:pi-prompt-template-model",
-    "npm:pi-hermes-memory"
+    "npm:pi-hermes-memory",
+    "npm:@ff-labs/pi-fff"
   ],
   "lastChangelogVersion": "0.80.3",
   "theme": "dark",
-  "defaultProvider": "kimi-coding",
-  "defaultModel": "kimi-for-coding",
-  "defaultThinkingLevel": "high"
+  "defaultProvider": "opencode-go",
+  "defaultModel": "deepseek-v4-flash",
+  "defaultThinkingLevel": "xhigh"
 }
