@@ -1,18 +1,18 @@
 {
   "packages": [
     "npm:pi-web-access",
-    "npm:pi-subagents",
     "npm:@juicesharp/rpiv-ask-user-question",
     "npm:@juicesharp/rpiv-todo",
     "npm:@ayulab/pi-rewind",
     "npm:pi-lens",
-    "git:github.com/DietrichGebert/ponytail",
     "npm:pi-provider-kimi-code",
     "npm:pi-intercom",
     "npm:pi-prompt-template-model",
     "npm:pi-hermes-memory",
     "npm:@ff-labs/pi-fff",
-    "npm:@sting8k/pi-vcc"
+    "npm:@sting8k/pi-vcc",
+    "npm:@dietrichgebert/ponytail",
+    "npm:bigpowers"
   ],
   "lastChangelogVersion": "0.83.0",
   "theme": "dark",
