@@ -13,8 +13,7 @@
     "npm:@sting8k/pi-vcc",
     "npm:@dietrichgebert/ponytail",
     "npm:bigpowers",
-    "npm:@narumitw/pi-goal",
-    "npm:@quintinshaw/pi-dynamic-workflows"
+    "npm:@narumitw/pi-goal"
   ],
   "lastChangelogVersion": "0.83.0",
   "theme": "dark",
