@@ -12,13 +12,14 @@
     "npm:@ff-labs/pi-fff",
     "npm:@sting8k/pi-vcc",
     "npm:@dietrichgebert/ponytail",
-    "npm:bigpowers"
+    "npm:bigpowers",
+    "npm:@narumitw/pi-goal"
   ],
   "lastChangelogVersion": "0.83.0",
   "theme": "dark",
   "defaultProvider": "openai-codex",
-  "defaultModel": "gpt-5.6-terra",
-  "defaultThinkingLevel": "high",
+  "defaultModel": "gpt-5.6-luna",
+  "defaultThinkingLevel": "medium",
   "enabledModels": [
     "opencode-go/deepseek-v4-flash",
     "opencode-go/deepseek-v4-pro",
