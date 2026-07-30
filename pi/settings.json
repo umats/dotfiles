@@ -11,16 +11,22 @@
     "npm:pi-intercom",
     "npm:pi-prompt-template-model",
     "npm:pi-hermes-memory",
-    "npm:@ff-labs/pi-fff"
+    "npm:@ff-labs/pi-fff",
+    "npm:@sting8k/pi-vcc"
   ],
-  "lastChangelogVersion": "0.80.3",
+  "lastChangelogVersion": "0.83.0",
   "theme": "dark",
-  "defaultProvider": "opencode-go",
-  "defaultModel": "deepseek-v4-flash",
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-5.6-terra",
   "defaultThinkingLevel": "high",
   "enabledModels": [
     "opencode-go/deepseek-v4-flash",
     "opencode-go/deepseek-v4-pro",
-    "kimi-coding/kimi-for-coding"
+    "kimi-coding/kimi-for-coding",
+    "kimi-coding/k3",
+    "kimi-coding/k3-256k",
+    "openai-codex/gpt-5.6-luna",
+    "openai-codex/gpt-5.6-sol",
+    "openai-codex/gpt-5.6-terra"
   ]
 }
