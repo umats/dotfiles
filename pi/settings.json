@@ -12,8 +12,7 @@
     "npm:@ff-labs/pi-fff",
     "npm:@sting8k/pi-vcc",
     "npm:@dietrichgebert/ponytail",
-    "npm:bigpowers",
-    "npm:@narumitw/pi-goal"
+    "npm:bigpowers"
   ],
   "lastChangelogVersion": "0.83.0",
   "theme": "dark",
