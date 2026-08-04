@@ -14,8 +14,8 @@
     "npm:@dietrichgebert/ponytail",
     "npm:bigpowers",
     "npm:pi-green",
-    "npm:@tintinweb/pi-subagents",
-    "npm:pi-model-alias"
+    "npm:pi-model-alias",
+    "npm:pi-subagents-j0k3r"
   ],
   "lastChangelogVersion": "0.83.0",
   "theme": "dark",
