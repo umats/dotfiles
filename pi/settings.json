@@ -15,7 +15,7 @@
     "npm:bigpowers",
     "npm:pi-green",
     "npm:pi-model-alias",
-    "npm:pi-subagents-j0k3r"
+    "npm:pi-subagents"
   ],
   "lastChangelogVersion": "0.83.0",
   "theme": "dark",
