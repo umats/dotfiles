@@ -13,18 +13,20 @@
     "npm:@sting8k/pi-vcc",
     "npm:@dietrichgebert/ponytail",
     "npm:bigpowers",
-    "npm:pi-green"
+    "npm:pi-green",
+    "npm:@tintinweb/pi-subagents",
+    "npm:pi-model-alias"
   ],
   "lastChangelogVersion": "0.83.0",
   "theme": "dark",
   "defaultProvider": "openai-codex",
-  "defaultModel": "gpt-5.6-terra",
-  "defaultThinkingLevel": "high",
+  "defaultModel": "gpt-5.6-luna",
+  "defaultThinkingLevel": "off",
   "enabledModels": [
     "kimi-coding/kimi-for-coding",
-    "kimi-coding/k3-256k",
     "openai-codex/gpt-5.6-luna",
     "openai-codex/gpt-5.6-sol",
-    "openai-codex/gpt-5.6-terra"
+    "openai-codex/gpt-5.6-terra",
+    "kimi-coding/k3-256k"
   ]
 }

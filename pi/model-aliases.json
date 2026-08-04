@@ -1,0 +1,23 @@
+{
+	"version": 1,
+	"aliases": [
+		{
+			"targetProvider": "openai-codex",
+			"targetModel": "gpt-5.6-luna",
+			"alias": "haiku",
+			"provider": ""
+		},
+		{
+			"targetProvider": "openai-codex",
+			"targetModel": "gpt-5.6-terra",
+			"alias": "sonnet",
+			"provider": ""
+		},
+		{
+			"targetProvider": "openai-codex",
+			"targetModel": "gpt-5.6-sol",
+			"alias": "opus",
+			"provider": ""
+		}
+	]
+}
