@@ -15,7 +15,8 @@
     "npm:bigpowers",
     "npm:pi-green",
     "npm:pi-model-alias",
-    "npm:pi-subagents"
+    "npm:pi-subagents",
+    "npm:@gotgenes/pi-permission-system"
   ],
   "lastChangelogVersion": "0.83.0",
   "theme": "dark",
