@@ -15,8 +15,7 @@
     "npm:bigpowers",
     "npm:pi-green",
     "npm:pi-model-alias",
-    "npm:pi-subagents",
-    "npm:@gotgenes/pi-permission-system"
+    "npm:pi-subagents"
   ],
   "lastChangelogVersion": "0.83.0",
   "theme": "dark",
@@ -32,7 +31,7 @@
   ],
   "subagents": {
     "agentOverrides": {
-        "scout": {
+      "scout": {
         "model": "openai-codex/gpt-5.6-luna",
         "thinking": "low"
       },
@@ -67,7 +66,9 @@
       "advisor": {
         "model": "kimi-coding/k3-256k",
         "thinking": "medium",
-        "fallbackModels": ["openai-codex/gpt-5.6-sol:medium"]
+        "fallbackModels": [
+          "openai-codex/gpt-5.6-sol:medium"
+        ]
       }
     }
   }
