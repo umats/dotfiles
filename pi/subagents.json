@@ -14,79 +14,87 @@
   ],
   "model_profiles": {
     "bp-explore-haiku": {
-      "model": "haiku",
+      "model": "openai-codex/gpt-5.6-luna",
       "effort": "medium"
     },
     "bp-explore-sonnet": {
-      "model": "sonnet",
+      "model": "openai-codex/gpt-5.6-terra",
       "effort": "medium"
     },
     "bp-explore-opus": {
-      "model": "opus",
+      "model": "openai-codex/gpt-5.6-sol",
       "effort": "medium"
     },
     "bp-plan-haiku": {
-      "model": "haiku",
+      "model": "openai-codex/gpt-5.6-luna",
       "effort": "medium"
     },
     "bp-plan-sonnet": {
-      "model": "sonnet",
+      "model": "openai-codex/gpt-5.6-terra",
       "effort": "medium"
     },
     "bp-plan-opus": {
-      "model": "opus",
+      "model": "openai-codex/gpt-5.6-sol",
       "effort": "medium"
     },
     "bp-execute-haiku": {
-      "model": "haiku",
+      "model": "openai-codex/gpt-5.6-luna",
       "effort": "medium"
     },
     "bp-execute-sonnet": {
-      "model": "sonnet",
+      "model": "openai-codex/gpt-5.6-terra",
       "effort": "medium"
     },
     "bp-execute-opus": {
-      "model": "opus",
+      "model": "openai-codex/gpt-5.6-sol",
       "effort": "medium"
     },
     "bp-validate-haiku": {
-      "model": "haiku",
+      "model": "openai-codex/gpt-5.6-luna",
       "effort": "medium"
     },
     "bp-validate-sonnet": {
-      "model": "sonnet",
+      "model": "openai-codex/gpt-5.6-terra",
       "effort": "medium"
     },
     "bp-validate-opus": {
-      "model": "opus",
+      "model": "openai-codex/gpt-5.6-sol",
       "effort": "medium"
     },
     "bp-explore-haiku-light": {
-      "model": "haiku",
+      "model": "openai-codex/gpt-5.6-luna",
       "effort": "low"
     },
-    "bp-debug-haiku": {
-      "model": "haiku",
-      "effort": "medium"
+    "bp-execute-haiku-light": {
+      "model": "openai-codex/gpt-5.6-luna",
+      "effort": "low"
+    },
+    "bp-debug-haiku-light": {
+      "model": "openai-codex/gpt-5.6-luna",
+      "effort": "low"
     },
     "bp-debug-sonnet": {
-      "model": "sonnet",
+      "model": "openai-codex/gpt-5.6-terra",
       "effort": "medium"
     },
+    "bp-validate-haiku-light": {
+      "model": "openai-codex/gpt-5.6-luna",
+      "effort": "low"
+    },
     "bp-review-security-sonnet": {
-      "model": "sonnet",
-      "effort": "high"
+      "model": "openai-codex/gpt-5.6-terra",
+      "effort": "medium"
     },
     "bp-review-external": {
       "model": "kimi-coding/k3-256k",
-      "effort": "high"
+      "effort": "medium"
     },
     "bp-review-external-fallback": {
-      "model": "opus",
-      "effort": "high"
+      "model": "openai-codex/gpt-5.6-sol",
+      "effort": "medium"
     },
     "bp-delivery-haiku": {
-      "model": "haiku",
+      "model": "openai-codex/gpt-5.6-luna",
       "effort": "medium"
     }
   }
