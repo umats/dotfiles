@@ -1,0 +1,93 @@
+{
+  "timeout_ms": 1200000,
+  "stall_timeout_ms": 240000,
+  "max_concurrency": 4,
+  "debug": false,
+  "session_resources": "lean",
+  "history_panel_shortcut": "ctrl+,",
+  "detail_cancel_shortcut": "x",
+  "background_handoff_shortcut": "ctrl+h",
+  "default_mode": "task",
+  "enable_continue": false,
+  "default_tools": [
+    "read"
+  ],
+  "model_profiles": {
+    "bp-explore-haiku": {
+      "model": "haiku",
+      "effort": "medium"
+    },
+    "bp-explore-sonnet": {
+      "model": "sonnet",
+      "effort": "medium"
+    },
+    "bp-explore-opus": {
+      "model": "opus",
+      "effort": "medium"
+    },
+    "bp-plan-haiku": {
+      "model": "haiku",
+      "effort": "medium"
+    },
+    "bp-plan-sonnet": {
+      "model": "sonnet",
+      "effort": "medium"
+    },
+    "bp-plan-opus": {
+      "model": "opus",
+      "effort": "medium"
+    },
+    "bp-execute-haiku": {
+      "model": "haiku",
+      "effort": "medium"
+    },
+    "bp-execute-sonnet": {
+      "model": "sonnet",
+      "effort": "medium"
+    },
+    "bp-execute-opus": {
+      "model": "opus",
+      "effort": "medium"
+    },
+    "bp-validate-haiku": {
+      "model": "haiku",
+      "effort": "medium"
+    },
+    "bp-validate-sonnet": {
+      "model": "sonnet",
+      "effort": "medium"
+    },
+    "bp-validate-opus": {
+      "model": "opus",
+      "effort": "medium"
+    },
+    "bp-explore-haiku-light": {
+      "model": "haiku",
+      "effort": "low"
+    },
+    "bp-debug-haiku": {
+      "model": "haiku",
+      "effort": "medium"
+    },
+    "bp-debug-sonnet": {
+      "model": "sonnet",
+      "effort": "medium"
+    },
+    "bp-review-security-sonnet": {
+      "model": "sonnet",
+      "effort": "high"
+    },
+    "bp-review-external": {
+      "model": "kimi-coding/k3-256k",
+      "effort": "high"
+    },
+    "bp-review-external-fallback": {
+      "model": "opus",
+      "effort": "high"
+    },
+    "bp-delivery-haiku": {
+      "model": "haiku",
+      "effort": "medium"
+    }
+  }
+}
