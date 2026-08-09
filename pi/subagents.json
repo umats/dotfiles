@@ -13,6 +13,10 @@
     "read"
   ],
   "model_profiles": {
+    "frontend": {
+      "model": "kimi-coding/k3-256k",
+      "effort": "high"
+    },
     "bp-context-scout": {
       "model": "openai-codex/gpt-5.6-luna",
       "effort": "low"
@@ -78,7 +82,7 @@
       "effort": "medium"
     },
     "bp-independent-reviewer": {
-      "model": "kimi-coding/k3-256k",
+      "model": "openai-codex/gpt-5.6-sol",
       "effort": "medium"
     },
     "bp-git-manager": {
