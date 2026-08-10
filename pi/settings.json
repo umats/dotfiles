@@ -16,7 +16,8 @@
     "npm:pi-green",
     "npm:pi-model-alias",
     "npm:tsubus-agent-skills",
-    "npm:pi-subagents-j0k3r"
+    "npm:pi-subagents-j0k3r",
+    "npm:@upstash/context7-pi"
   ],
   "lastChangelogVersion": "0.84.1",
   "theme": "dark",
