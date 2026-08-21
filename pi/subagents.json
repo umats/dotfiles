@@ -14,8 +14,32 @@
   ],
   "model_profiles": {
     "frontend": {
-      "model": "kimi-coding/k3-256k",
-      "effort": "high"
+      "model": "openai-coded/gpt-5.6-sol",
+      "effort": "medium"
+    },
+    "general-researcher": {
+      "model": "openai-codex/gpt-5.6-luna",
+      "effort": "low"
+    },
+    "general-planner": {
+      "model": "openai-codex/gpt-5.6-sol",
+      "effort": "medium"
+    },
+    "general-implementer": {
+      "model": "openai-codex/gpt-5.6-terra",
+      "effort": "medium"
+    },
+    "general-reviewer": {
+      "model": "openai-codex/gpt-5.6-sol",
+      "effort": "medium"
+    },
+    "general-verifier": {
+      "model": "openai-codex/gpt-5.6-luna",
+      "effort": "medium"
+    },
+    "git-manager": {
+      "model": "openai-codex/gpt-5.6-luna",
+      "effort": "low"
     },
     "spark-worker": {
       "model": "openai-codex/gpt-5.3-codex-spark",
