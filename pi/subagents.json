@@ -17,6 +17,10 @@
       "model": "kimi-coding/k3-256k",
       "effort": "high"
     },
+    "spark-worker": {
+      "model": "openai-codex/gpt-5.3-codex-spark",
+      "effort": "low"
+    },
     "bp-context-scout": {
       "model": "openai-codex/gpt-5.6-luna",
       "effort": "low"
