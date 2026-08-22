@@ -1,0 +1,23 @@
+{
+  "memoryMode": "policy-only",
+  "memoryPolicyStyle": "compact",
+  "memoryCharLimit": 5000,
+  "userCharLimit": 5000,
+  "projectCharLimit": 5000,
+  "reviewEnabled": true,
+  "nudgeInterval": 20,
+  "nudgeToolCalls": 30,
+  "reviewRecentMessages": 40,
+  "reviewTransport": "direct",
+  "llmThinkingOverride": "off",
+  "correctionDetection": true,
+  "failureInjectionEnabled": true,
+  "memoryOverflowStrategy": "auto-consolidate",
+  "flushOnCompact": true,
+  "flushOnShutdown": true,
+  "flushMinTurns": 6,
+  "flushRecentMessages": 40,
+  "sessionSearch": {
+    "variant": "legacy"
+  }
+}
