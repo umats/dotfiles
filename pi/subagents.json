@@ -14,115 +14,47 @@
   ],
   "model_profiles": {
     "frontend": {
-      "model": "openai-coded/gpt-5.6-sol",
-      "effort": "medium"
-    },
-    "general-researcher": {
-      "model": "openai-codex/gpt-5.6-luna",
-      "effort": "low"
-    },
-    "general-planner": {
-      "model": "openai-codex/gpt-5.6-sol",
-      "effort": "medium"
-    },
-    "general-implementer": {
       "model": "openai-codex/gpt-5.6-terra",
-      "effort": "medium"
-    },
-    "general-reviewer": {
-      "model": "openai-codex/gpt-5.6-sol",
-      "effort": "medium"
-    },
-    "general-verifier": {
-      "model": "openai-codex/gpt-5.6-luna",
       "effort": "medium"
     },
     "git-manager": {
       "model": "openai-codex/gpt-5.6-luna",
-      "effort": "low"
+      "effort": "medium"
+    },
+    "browser-validator": {
+      "model": "openai-codex/gpt-5.6-terra",
+      "effort": "medium"
+    },
+    "security-reviewer": {
+      "model": "openai-codex/gpt-5.6-terra",
+      "effort": "medium"
+    },
+    "ops-release-operator": {
+      "model": "openai-codex/gpt-5.6-terra",
+      "effort": "medium"
     },
     "spark-worker": {
       "model": "openai-codex/gpt-5.3-codex-spark",
       "effort": "low"
     },
-    "bp-context-scout": {
-      "model": "openai-codex/gpt-5.6-luna",
-      "effort": "low"
-    },
-    "bp-code-inspector": {
-      "model": "openai-codex/gpt-5.6-luna",
-      "effort": "medium"
-    },
-    "bp-solution-researcher": {
+    "implementer": {
       "model": "openai-codex/gpt-5.6-terra",
       "effort": "medium"
     },
-    "bp-architecture-advisor": {
+    "planner": {
       "model": "openai-codex/gpt-5.6-sol",
       "effort": "medium"
     },
-    "bp-project-planner": {
-      "model": "openai-codex/gpt-5.6-terra",
-      "effort": "medium"
-    },
-    "bp-implementation-planner": {
-      "model": "openai-codex/gpt-5.6-sol",
-      "effort": "medium"
-    },
-    "bp-knowledge-maintainer": {
+    "researcher": {
       "model": "openai-codex/gpt-5.6-luna",
       "effort": "low"
     },
-    "bp-task-operator": {
-      "model": "openai-codex/gpt-5.6-luna",
-      "effort": "medium"
-    },
-    "bp-feature-implementer": {
-      "model": "openai-codex/gpt-5.6-terra",
-      "effort": "medium"
-    },
-    "bp-design-specialist": {
+    "reviewer": {
       "model": "openai-codex/gpt-5.6-sol",
       "effort": "medium"
     },
-    "bp-stall-diagnostician": {
+    "verifier": {
       "model": "openai-codex/gpt-5.6-luna",
-      "effort": "low"
-    },
-    "bp-root-cause-analyst": {
-      "model": "openai-codex/gpt-5.6-terra",
-      "effort": "medium"
-    },
-    "bp-trace-gatekeeper": {
-      "model": "openai-codex/gpt-5.6-luna",
-      "effort": "low"
-    },
-    "bp-verification-runner": {
-      "model": "openai-codex/gpt-5.6-luna",
-      "effort": "medium"
-    },
-    "bp-quality-validator": {
-      "model": "openai-codex/gpt-5.6-terra",
-      "effort": "medium"
-    },
-    "bp-security-reviewer": {
-      "model": "openai-codex/gpt-5.6-terra",
-      "effort": "medium"
-    },
-    "bp-independent-reviewer": {
-      "model": "openai-codex/gpt-5.6-sol",
-      "effort": "medium"
-    },
-    "bp-git-manager": {
-      "model": "openai-codex/gpt-5.6-luna",
-      "effort": "medium"
-    },
-    "bp-deployment-operator": {
-      "model": "openai-codex/gpt-5.6-terra",
-      "effort": "medium"
-    },
-    "bp-workflow-coordinator": {
-      "model": "openai-codex/gpt-5.6-terra",
       "effort": "medium"
     }
   }
