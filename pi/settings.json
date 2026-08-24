@@ -1,4 +1,33 @@
 {
+  "packages": [
+    "npm:pi-web-access",
+    "npm:@juicesharp/rpiv-ask-user-question",
+    "npm:@juicesharp/rpiv-todo",
+    "npm:pi-lens",
+    "npm:@ff-labs/pi-fff",
+    "npm:pi-intercom",
+    "npm:pi-prompt-template-model",
+    "npm:pi-hermes-memory",
+    "npm:@sting8k/pi-vcc",
+    "npm:@dietrichgebert/ponytail",
+    "npm:pi-green",
+    "npm:pi-model-alias",
+    "npm:tsubus-agent-skills",
+    "npm:pi-subagents",
+    "npm:@upstash/context7-pi",
+    "npm:@narumitw/pi-chrome-devtools"
+  ],
+  "lastChangelogVersion": "0.84.2",
+  "theme": "dark",
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-5.6-terra",
+  "defaultThinkingLevel": "medium",
+  "enabledModels": [
+    "openai-codex/gpt-5.3-codex-spark",
+    "openai-codex/gpt-5.6-luna",
+    "openai-codex/gpt-5.6-sol",
+    "openai-codex/gpt-5.6-terra"
+  ],
   "subagents": {
     "agentOverrides": {
       "delegate": { "model": "openai-codex/gpt-5.6-luna" },
