@@ -15,7 +15,8 @@
     "npm:pi-subagents",
     "npm:@upstash/context7-pi",
     "npm:@narumitw/pi-chrome-devtools",
-    "npm:pi-memory"
+    "npm:pi-memory",
+    "npm:bigpowers"
   ],
   "lastChangelogVersion": "0.84.3",
   "theme": "dark",
