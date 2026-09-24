@@ -35,7 +35,7 @@
       },
       "scout": {
         "model": "openai-codex/gpt-6-luna",
-        "thinking": "low"
+        "thinking": "medium"
       },
       "researcher": {
         "model": "openai-codex/gpt-6-sol",
