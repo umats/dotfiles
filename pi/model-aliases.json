@@ -3,13 +3,13 @@
 	"aliases": [
 		{
 			"targetProvider": "openai-codex",
-			"targetModel": "gpt-5.6-luna",
+			"targetModel": "gpt-6-luna",
 			"alias": "haiku",
 			"provider": ""
 		},
 		{
 			"targetProvider": "openai-codex",
-			"targetModel": "gpt-5.6-terra",
+			"targetModel": "gpt-6-sol",
 			"alias": "sonnet",
 			"provider": ""
 		},

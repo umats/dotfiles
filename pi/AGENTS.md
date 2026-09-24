@@ -11,3 +11,15 @@
 - NEVER overwrite, revert, or discard existing user changes unless explicitly requested by the user.
 - NEVER refactor or modify unrelated code.
 - After modifying files, ALWAYS state changed files, validation run, and any remaining risk concisely.
+
+## Pi Herdsman routing
+
+For independent, non-trivial work, delegate with Pi Herdsman's `agent` tool:
+
+- `scout`: repository reconnaissance and impact mapping.
+- `researcher`: external docs, APIs, and current facts.
+- `implementer`: approved, bounded code changes.
+- `generalist`: bounded work that does not fit another role.
+- `reviewer`: independent read-only review after implementation.
+
+Keep Bigpowers lifecycle, planning, acceptance, integration, and validation with the lead. Delegate only independent scopes; never overlap writers or start review before the implementation agent finishes.
