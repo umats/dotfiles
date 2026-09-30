@@ -9,7 +9,7 @@
 		},
 		{
 			"targetProvider": "openai-codex",
-			"targetModel": "gpt-6-sol",
+			"targetModel": "gpt-6.1-sol",
 			"alias": "sonnet",
 			"provider": ""
 		},

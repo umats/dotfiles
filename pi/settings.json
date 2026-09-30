@@ -17,7 +17,7 @@
     "npm:bigpowers",
     "npm:pi-herdsman"
   ],
-  "lastChangelogVersion": "0.87.1",
+  "lastChangelogVersion": "0.99.1",
   "theme": "dark",
   "defaultProvider": "openai-codex",
   "defaultModel": "gpt-6-sol",
@@ -25,7 +25,7 @@
   "enabledModels": [
     "openai-codex/gpt-6-astra",
     "openai-codex/gpt-6-luna",
-    "openai-codex/gpt-6-sol"
+    "openai-codex/gpt-6.1-sol"
   ],
   "subagents": {
     "agentOverrides": {
