@@ -20,7 +20,7 @@
   "lastChangelogVersion": "0.99.1",
   "theme": "dark",
   "defaultProvider": "openai-codex",
-  "defaultModel": "gpt-6-sol",
+  "defaultModel": "gpt-6.1-sol",
   "defaultThinkingLevel": "medium",
   "enabledModels": [
     "openai-codex/gpt-6-astra",
@@ -38,7 +38,7 @@
         "thinking": "medium"
       },
       "researcher": {
-        "model": "openai-codex/gpt-6-sol",
+        "model": "openai-codex/gpt-6.1-sol",
         "thinking": "medium"
       },
       "reviewer": {
@@ -46,7 +46,7 @@
         "thinking": "medium"
       },
       "worker": {
-        "model": "openai-codex/gpt-6-sol",
+        "model": "openai-codex/gpt-6.1-sol",
         "thinking": "medium"
       },
       "oracle": {
