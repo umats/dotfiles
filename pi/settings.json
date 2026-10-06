@@ -4,7 +4,6 @@
     "npm:@juicesharp/rpiv-ask-user-question",
     "npm:@juicesharp/rpiv-todo",
     "npm:pi-lens",
-    "npm:@ff-labs/pi-fff",
     "npm:pi-prompt-template-model",
     "npm:@sting8k/pi-vcc",
     "npm:@dietrichgebert/ponytail",
@@ -17,7 +16,7 @@
     "npm:bigpowers",
     "npm:pi-herdsman"
   ],
-  "lastChangelogVersion": "0.99.1",
+  "lastChangelogVersion": "1.0.3",
   "theme": "dark",
   "defaultProvider": "openai-codex",
   "defaultModel": "gpt-6.1-sol",
