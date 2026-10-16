@@ -15,10 +15,13 @@
     "npm:pi-memory",
     "npm:bigpowers",
     "npm:pi-subagents",
-    "npm:pi-fff"
+    "npm:pi-fff",
+    "npm:@utpalsinghdev/pi-context-window"
   ],
-  "defaultTools": ["+codemode"],
-  "lastChangelogVersion": "1.2.0",
+  "defaultTools": [
+    "+codemode"
+  ],
+  "lastChangelogVersion": "1.3.0",
   "theme": "dark",
   "defaultProvider": "openai-codex",
   "defaultModel": "gpt-6.1-sol",
