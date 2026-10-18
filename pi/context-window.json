@@ -1,3 +1,4 @@
 {
-  "thresholdPercent": 40
+  "thresholdPercent": null,
+  "thresholdTokens": 200000
 }
