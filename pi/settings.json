@@ -13,10 +13,10 @@
     "npm:@upstash/context7-pi",
     "npm:@narumitw/pi-chrome-devtools",
     "npm:pi-memory",
-    "npm:bigpowers",
     "npm:pi-subagents",
     "npm:pi-fff",
-    "npm:@utpalsinghdev/pi-context-window"
+    "npm:@utpalsinghdev/pi-context-window",
+    "git:github.com/obra/superpowers"
   ],
   "defaultTools": [
     "+codemode"
