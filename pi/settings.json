@@ -18,6 +18,9 @@
     "npm:@utpalsinghdev/pi-context-window",
     "git:github.com/obra/superpowers"
   ],
+  "extensions": [
+    "~/iac/dotfiles/pi/extensions/context-vcc.ts"
+  ],
   "defaultTools": [
     "+codemode"
   ],

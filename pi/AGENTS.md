@@ -12,6 +12,14 @@
 - NEVER refactor or modify unrelated code.
 - After modifying files, ALWAYS state changed files, validation run, and any remaining risk concisely.
 
+## Context-threshold handoff and continuation
+
+- Call `context_window` during long tasks and before deciding to continue or hand off; trust its structured threshold status, not rounded percentages.
+- When the threshold is reached, stop task work. The local `context-vcc` extension requests a terminal `## Context handoff`: task, completed work, changed files, validation results, blockers, approval limits, and the exact next step. Finish it without additional tools.
+- Let the extension dispatch `/pi-vcc` and resume in the same session with that handoff. Do not run slash commands through a shell, create a new session, or repeat completed work.
+- After rollover, call `context_window` before resuming task work. Continue only when a fresh report confirms usage below the threshold. If checking or compaction fails, is cancelled, or remains over threshold, stop and explain; do not loop.
+- Continuation grants no new permissions. If the task is finished or awaits approval, report that and stop. Use `vcc_recall` for missing earlier details.
+
 ## Pi Herdsman routing
 
 For independent, non-trivial work, delegate with Pi Herdsman's `agent` tool:
