@@ -1,12 +1,9 @@
 import type { ExtensionAPI, ExtensionContext } from "@earendil-works/pi-coding-agent";
 
-const handoffRequest = `The context threshold was reached. Stop task work and write a concise terminal response headed "## Context handoff" with: the current task, completed work, changed files, checks and results, blockers, approval limits, and the exact next step. Do not run more tools. Do not invent work if the task is complete or blocked on user approval. A local extension will compact with /pi-vcc and supply this handoff when resuming.`;
-
 export default function contextVcc(pi: ExtensionAPI): void {
-  type Phase = "idle" | "pending" | "handoff" | "dispatch" | "compacting" | "resume" | "checking";
+  type Phase = "idle" | "pending" | "dispatch" | "compacting" | "resume" | "checking";
   let phase: Phase = "idle";
   let armed = true;
-  let handoff = "";
   let timer: ReturnType<typeof setTimeout> | undefined;
 
   function reset(rearm = false): void {
@@ -14,7 +11,6 @@ export default function contextVcc(pi: ExtensionAPI): void {
     timer = undefined;
     phase = "idle";
     armed = rearm;
-    handoff = "";
   }
 
   function stop(ctx: ExtensionContext, reason: string): void {
@@ -85,14 +81,6 @@ export default function contextVcc(pi: ExtensionAPI): void {
       : "Task work is paused for context rollover. Finish the handoff without more tools." };
   });
 
-  pi.on("turn_end", (event) => {
-    if (phase !== "handoff" || event.message.role !== "assistant") return;
-    const message = event.message;
-    handoff = message.stopReason === "stop" && !message.content.some(part => part.type === "toolCall")
-      ? message.content.flatMap(part => part.type === "text" ? [part.text] : []).join("\n").trim()
-      : "";
-  });
-
   pi.on("agent_before_settle", (event, ctx) => {
     if (phase === "idle") return;
     if (event.outcome !== "completed") {
@@ -101,19 +89,7 @@ export default function contextVcc(pi: ExtensionAPI): void {
     }
     if (phase === "pending") {
       if (!pi.getCommands().some(command => command.name === "pi-vcc" && command.source === "extension")) {
-        stop(ctx, "/pi-vcc is not loaded. Write a handoff and compact manually.");
-        return;
-      }
-      phase = "handoff";
-      return {
-        entries: [{ type: "custom_message" as const, customType: "context-vcc-handoff",
-          content: handoffRequest, display: true }],
-        continue: true,
-      };
-    }
-    if (phase === "handoff") {
-      if (!handoff) {
-        stop(ctx, "no completed handoff was produced; compact manually.");
+        stop(ctx, "/pi-vcc is not loaded; compact manually.");
         return;
       }
       if (event.continue || ctx.hasPendingMessages()) {
@@ -138,11 +114,10 @@ export default function contextVcc(pi: ExtensionAPI): void {
       stop(ctx, "compaction was not confirmed as pi-vcc; continue manually.");
       return;
     }
-    const prompt = `Context rollover completed with pi-vcc. First call context_window; do not do task work until it confirms usage below the configured threshold. If unavailable or still reached, stop and explain. Then resume only the unfinished, already-authorized task from the handoff below. Preserve all approval limits; do not repeat completed work. If complete or blocked on user approval, report that and stop. Use vcc_recall for missing earlier details.\n\n${handoff}`;
     phase = "resume";
     whenIdle(ctx, () => {
       phase = "checking";
-      pi.sendUserMessage(prompt);
+      pi.sendUserMessage("continue");
     });
   });
 
