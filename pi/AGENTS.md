@@ -3,7 +3,6 @@
 - ALWAYS delegate to subagents when doing so meaningfully improves speed, coverage, or review quality. NEVER delegate trivial single-step work unless the user explicitly requests delegation.
 - ALWAYS inspect relevant code and follow all applicable instruction files before editing. ALWAYS follow applicable project instructions when they conflict with this global guidance, unless the user explicitly instructs otherwise.
 - ALWAYS use any available skill that clearly applies to the current task; read its `SKILL.md` before acting.
-- When a bigpowers skill refers to `scripts/...` and the project does not contain it, use `~/.pi/agent/npm/node_modules/bigpowers/scripts/...`.
 - ALWAYS prefer the smallest correct change: reuse existing code, standard libraries, and installed dependencies.
 - MUST clarify genuinely ambiguous requirements before making irreversible or broad changes.
 - NEVER expose secrets or credentials. NEVER run destructive commands, publish, deploy, commit, or push unless explicitly requested by the user.
@@ -20,9 +19,9 @@
 - After rollover, call `context_window` before resuming task work. Continue only when a fresh report confirms usage below the threshold. If checking or compaction fails, is cancelled, or remains over threshold, stop and explain; do not loop.
 - Continuation grants no new permissions. If the task is finished or awaits approval, report that and stop. Use `vcc_recall` for missing earlier details.
 
-## Pi Herdsman routing
+## Subagent routing
 
-For independent, non-trivial work, delegate with Pi Herdsman's `agent` tool:
+For independent, non-trivial work, use the available subagent tool (`subagent` with pi-subagents). Choose an available agent suited to the role:
 
 - `scout`: repository reconnaissance and impact mapping.
 - `researcher`: external docs, APIs, and current facts.
@@ -30,4 +29,4 @@ For independent, non-trivial work, delegate with Pi Herdsman's `agent` tool:
 - `generalist`: bounded work that does not fit another role.
 - `reviewer`: independent read-only review after implementation.
 
-Keep Bigpowers lifecycle, planning, acceptance, integration, and validation with the lead. Delegate only independent scopes; never overlap writers or start review before the implementation agent finishes.
+Keep lifecycle, planning, acceptance, integration, and validation with the lead. Delegate only independent scopes; never overlap writers or start review before the implementation agent finishes.
