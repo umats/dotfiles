@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "rea": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "rea-agents@6.7.0",
+        "mcp"
+      ],
+      "env": {
+        "REA_JADX_MCP_JAR": "/home/tsubus/.local/share/jadx-headless-mcp/0.7.1/jadx-headless-mcp-0.7.1-all.jar"
+      }
+    }
+  }
+}
