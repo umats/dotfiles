@@ -35,6 +35,7 @@
     "claude-bridge/claude-haiku-5-5"
   ],
   "subagents": {
+    "defaultSubagentOnlyExtensions": ["/home/umats/.pi/agent/npm/node_modules/pi-claude-bridge/src/index.ts"],
     "agentOverrides": {
       "delegate": {
         "model": "claude-bridge/claude-haiku-5-5",
