@@ -8,6 +8,13 @@
 - NEVER refactor or modify unrelated code.
 - After modifying files, ALWAYS state changed files, validation run, and any remaining risk concisely.
 
+## Subagents and dual blind review
+
+- Use subagents whenever they help (parallel independent work, isolated research, fresh-eyed review); do the work directly when the task is small.
+- Before starting implementation, ALWAYS run a dual blind review of the plan: dispatch two independent reviewer subagents, each given only the plan and necessary context, never the other's findings or your own opinion of the plan. Fix every valid issue, then re-run the review on the revised plan. Repeat until both reviewers report no blocking issues. Only then begin implementing.
+- Before merging or pushing changes into the main branch, ALWAYS run a dual blind review of the diff the same way (two independent reviewer subagents, no shared findings). Fix every valid issue, then re-run the review on the fixes. Repeat until both reviewers report no blocking issues. Only then merge or push, and only if the user has requested it.
+- If a reviewer's finding is rejected, record the reason briefly in the report. If subagents are unavailable, say so and ask the user how to proceed rather than skipping the review.
+
 ## Context-threshold handoff and continuation
 
 - Call `context_window` during long tasks and before deciding to continue or hand off; trust its structured threshold status, not rounded percentages.
