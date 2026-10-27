@@ -1,0 +1,7 @@
+{
+  "provider": {
+    "plan": "max",
+    "longContextExtraUsage": false,
+    "strictMcpConfig": false
+  }
+}
