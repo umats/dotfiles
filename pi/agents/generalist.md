@@ -1,5 +1,5 @@
 ---
 name: generalist
 thinking: medium
-model: openai-codex/gpt-6.1-sol
+model: claude-bridge/claude-sonnet-5-5
 ---

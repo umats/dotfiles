@@ -2,20 +2,20 @@
 	"version": 1,
 	"aliases": [
 		{
-			"targetProvider": "openai-codex",
-			"targetModel": "gpt-6-luna",
+			"targetProvider": "claude-bridge",
+			"targetModel": "claude-haiku-5-5",
 			"alias": "haiku",
 			"provider": ""
 		},
 		{
-			"targetProvider": "openai-codex",
-			"targetModel": "gpt-6.1-sol",
+			"targetProvider": "claude-bridge",
+			"targetModel": "claude-sonnet-5-5",
 			"alias": "sonnet",
 			"provider": ""
 		},
 		{
-			"targetProvider": "openai-codex",
-			"targetModel": "gpt-6-astra",
+			"targetProvider": "claude-bridge",
+			"targetModel": "claude-opus-5-5",
 			"alias": "opus",
 			"provider": ""
 		}

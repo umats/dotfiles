@@ -1,8 +1,6 @@
 # Global Agent Rules
 
-- ALWAYS inspect relevant code and follow all applicable instruction files before editing. ALWAYS follow applicable project instructions when they conflict with this global guidance, unless the user explicitly instructs otherwise.
 - ALWAYS use any available skill that clearly applies to the current task; read its `SKILL.md` before acting.
-- ALWAYS prefer the smallest correct change: reuse existing code, standard libraries, and installed dependencies.
 - MUST clarify genuinely ambiguous requirements before making irreversible or broad changes.
 - NEVER expose secrets or credentials. NEVER run destructive commands, publish, deploy, commit, or push unless explicitly requested by the user.
 - ALWAYS run the narrowest relevant validation available after code changes. ALWAYS report what was validated and anything not verified.

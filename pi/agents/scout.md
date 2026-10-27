@@ -1,5 +1,5 @@
 ---
 name: scout
-model: openai-codex/gpt-6-luna
+model: claude-bridge/claude-haiku-5-5
 thinking: medium
 ---

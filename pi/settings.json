@@ -15,7 +15,8 @@
     "npm:pi-subagents",
     "npm:pi-fff",
     "npm:@utpalsinghdev/pi-context-window",
-    "git:github.com/obra/superpowers"
+    "git:github.com/obra/superpowers",
+    "npm:pi-claude-bridge"
   ],
   "extensions": [
     "~/iac/dotfiles/pi/extensions/context-vcc.ts"
@@ -25,38 +26,38 @@
   ],
   "lastChangelogVersion": "1.4.0",
   "theme": "dark",
-  "defaultProvider": "openai-codex",
-  "defaultModel": "gpt-6.1-sol",
+  "defaultProvider": "claude-bridge",
+  "defaultModel": "claude-sonnet-5-5",
   "defaultThinkingLevel": "medium",
   "enabledModels": [
-    "openai-codex/gpt-6-astra",
-    "openai-codex/gpt-6-luna",
-    "openai-codex/gpt-6.1-sol"
+    "claude-bridge/claude-opus-5-5",
+    "claude-bridge/claude-sonnet-5-5",
+    "claude-bridge/claude-haiku-5-5"
   ],
   "subagents": {
     "agentOverrides": {
       "delegate": {
-        "model": "openai-codex/gpt-6-luna",
+        "model": "claude-bridge/claude-haiku-5-5",
         "thinking": "low"
       },
       "scout": {
-        "model": "openai-codex/gpt-6-luna",
+        "model": "claude-bridge/claude-haiku-5-5",
         "thinking": "medium"
       },
       "researcher": {
-        "model": "openai-codex/gpt-6.1-sol",
+        "model": "claude-bridge/claude-sonnet-5-5",
         "thinking": "medium"
       },
       "reviewer": {
-        "model": "openai-codex/gpt-6-astra",
+        "model": "claude-bridge/claude-opus-5-5",
         "thinking": "medium"
       },
       "worker": {
-        "model": "openai-codex/gpt-6.1-sol",
+        "model": "claude-bridge/claude-sonnet-5-5",
         "thinking": "medium"
       },
       "oracle": {
-        "model": "openai-codex/gpt-6-astra",
+        "model": "claude-bridge/claude-opus-5-5",
         "thinking": "high"
       }
     }
